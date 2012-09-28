@@ -4,6 +4,9 @@ Package.describe({
   summary: "A markdown parser and compiler. Built for speed."
 });
 
+// XXX hack -- need a way to use a package at bundle time
+var _ = require('../../packages/underscore/underscore.js');
+
 Package.on_use(function (api, where) {
   where = where || ["client", "server"];
   where = where instanceof Array ? where : [where];
