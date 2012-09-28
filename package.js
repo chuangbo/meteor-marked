@@ -1,4 +1,4 @@
-// Source: https://github.com/coreyti/showdown
+// Source: https://github.com/chjj/marked
 
 Package.describe({
   summary: "A markdown parser and compiler. Built for speed."
