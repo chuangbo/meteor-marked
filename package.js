@@ -5,7 +5,7 @@ Package.describe({
 });
 
 // XXX hack -- need a way to use a package at bundle time
-var _ = Npm.require('../../packages/underscore/underscore.js');
+var _ = Npm.require('underscore');
 
 Package.on_use(function (api, where) {
   where = where || ["client", "server"];
