@@ -3,7 +3,7 @@
   "description": "A markdown parser and compiler. Built for speed.",
   "homepage": "https://github.com/chuangbo/meteor-marked",
   "author": "Chuangbo Li <im@chuangbo.li>",
-  "version": "0.2.8.2",
+  "version": "0.2.9",
   "git": "https://github.com/chuangbo/meteor-marked.git",
   "packages": {}
 }
