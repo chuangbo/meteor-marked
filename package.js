@@ -7,6 +7,6 @@ Package.describe({
 Package.on_use(function (api) {
   api.add_files("marked/lib/marked.js");
 
-  api.use("ui", "client", {weak: true});
+  api.use("templating", "client", {weak: true});
   api.add_files('template-integration.js', 'client');
 });
