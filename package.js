@@ -2,7 +2,7 @@
 
 Package.describe({
   summary: "A markdown parser and compiler. Built for speed.",
-  version: "0.3.3",
+  version: "0.3.4",
   git: "https://github.com/chuangbo/meteor-marked.git"
 });
 
