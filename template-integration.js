@@ -1,14 +1,14 @@
 if (Package.templating) {
   var Template = Package.templating.Template;
-  var UI = Package.ui.UI; // implied by `templating`
+  var UI = Package.blaze.UI; // implied by `templating`
   var HTML = Package.htmljs.HTML; // implied by `ui`
   var Blaze = Package.blaze.Blaze; // implied by `ui`
 
-  UI.registerHelper('markdown', Template.__create__('markdown', function () {
+  Blaze.registerHelper('markdown', Blaze.Template('markdown', function () {
     var view = this;
     var content = '';
     if (view.templateContentBlock) {
-      content = Blaze.toText(view.templateContentBlock, HTML.TEXTMODE.STRING);
+      content = Blaze._toText(view.templateContentBlock, HTML.TEXTMODE.STRING);
     }
     return HTML.Raw(marked(content));
   }));
