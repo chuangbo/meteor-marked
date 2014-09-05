@@ -1,6 +1,5 @@
 if (Package.templating) {
   var Template = Package.templating.Template;
-  var UI = Package.blaze.UI; // implied by `templating`
   var HTML = Package.htmljs.HTML; // implied by `ui`
   var Blaze = Package.blaze.Blaze; // implied by `ui`
 
