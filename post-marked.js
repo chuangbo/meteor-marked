@@ -1,0 +1,1 @@
+marked = module.exports;
