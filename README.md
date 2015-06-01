@@ -27,3 +27,11 @@ marked.setOptions({
 
 you can also set an option `highlight` with a function to handle syntax highlighting for code blocks.
 Some Meteor syntax highlighting smart packages do this integration for you automatically.
+
+e.g.
+
+```js
+marked.setOptions({
+  highlight: function (code) { return hljs.highlightAuto(code).value; }
+});
+```
