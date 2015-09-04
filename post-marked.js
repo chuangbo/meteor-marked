@@ -1,1 +1,1 @@
-marked = module.exports;
+marked = this.marked;
