@@ -7,15 +7,15 @@ Package.describe({
   git: "https://github.com/chuangbo/meteor-marked.git"
 });
 
-Package.on_use(function (api) {
-  api.versionsFrom("METEOR@0.9.1");
+Package.onUse(function (api) {
+  api.versionsFrom("METEOR@1.0");
   api.use("templating", "client", {weak: true});
 
-  api.add_files([
+  api.addFiles([
     "marked/lib/marked.js",
     "post-marked.js"
   ]);
 
-  api.add_files('template-integration.js', 'client');
+  api.addFiles('template-integration.js', 'client');
   api.export('marked');
 });
